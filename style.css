@@ -1,0 +1,380 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header Section */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 36px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hero Section */
+  #hero {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  #hero img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  #hero h2 {
+    margin-bottom: 20px;
+    font-size: 48px;
+  }
+  
+  #hero p {
+    font-size: 24px;
+  }
+  
+  /* Section Style */
+  .container {
+    width: 80%;
+    margin: 40px auto;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  /* News Grid */
+  .news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .news-grid article {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .news-grid article:hover {
+    transform: scale(1.05);
+  }
+  
+  .news-grid article img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .news-grid article h3 {
+    font-size: 24px;
+    margin: 20px 15px;
+  }
+  
+  .news-grid article p {
+    font-size: 16px;
+    margin: 0 15px 20px;
+  }
+  
+  /* Hover Effect */
+  .news-grid article:hover img {
+    opacity: 0.8;
+  }
+  
+  /* Links */
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+    }
+  
+    #hero h2 {
+      font-size: 36px;
+    }
+  
+    #hero p {
+      font-size: 20px;
+    }
+  
+    .news-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    nav ul li {
+      display: block;
+      margin: 10px 0;
+    }
+  }
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Header Section */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hero Section */
+  #hero {
+    position: relative;
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  #hero .hero-container h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  #hero img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  #hero p {
+    font-size: 1.5em;
+  }
+  
+  #hero button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #hero button:hover {
+    background-color: #ff6666;
+  }
+  
+  /* Headline Section */
+  #headline, #world, #sports, #technology {
+    background-color: white;
+    padding: 40px 0;
+    margin-bottom: 20px;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  /* Grid Layout */
+  .headline-grid, .world-grid, .sports-grid, .tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  article {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  article:hover {
+    transform: scale(1.05);
+  }
+  
+  article img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  article h3 {
+    font-size: 1.5em;
+    margin: 15px;
+  }
+  
+  article p {
+    font-size: 1em;
+    margin: 0 15px 15px;
+  }
+  
+  article a {
+    color: #ff4d4d;
+    text-decoration: none;
+  }
+  
+  article a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+  }
+  
+  footer p {
+    font-size: 1.1em;
+  }
+  
+  
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #6d6767;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #4cae4c;
+  }
+  
+  /* Section Spacing */
+  section {
+    margin: 20px 0;
+  }
+  
+  /* Form Alignment */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
